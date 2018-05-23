@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sig-in</title>
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/42.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+<header>
+    <img src="http://hdv.gov.co/wp-content/uploads/2013/12/logo-banco-de-sangre-01.jpg" style="width:200px;height:200px;">
+</header>
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+            <form class="login100-form validate-form">
+					<h2>
+						Registro de pintas de sangre
+					</h2>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere el id de la bolsa">
+                    <span class="label-input100">Id bolsa</span>
+                    <input class="input100" type="text" name="idBolsa" placeholder="Ingrese el id de la bolsa">
+                    <span class="focus-input100" data-symbol="&#xf240;"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere el factor RH">
+                    <span class="label-input100">Factor RH</span>
+                    <input class="input100" type="text" name="factorRH" placeholder="Ingrese el factor RH">
+                    <span class="focus-input100" data-symbol="&#xf240;"></span>
+                </div>
+
+                <div>
+                    <span class="label-input100" data-symbol="&#xf241;">Sangre y sus componentes</span>
+                    <select name="blond">
+                        <option value="entera">Entera</option>
+                        <option value="hemoderivados">Hemoderivados</option>
+                    </select>
+                </div>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere la fecha de ingreso">
+                    <span class="label-input100">Fecha de ingreso</span>
+                    <input class="input100" type="date" name="dateInput" placeholder="Ingrese la fecha de ingreso">
+                    <span class="focus-input100" data-symbol="&#xf150;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere la fecha de vencimiento">
+                    <span class="label-input100">Fecha de vencimiento</span>
+                    <input class="input100" type="date" name="dateXpired" placeholder="Ingrese la fecha de vencimiento">
+                    <span class="focus-input100" data-symbol="&#xf150;"></span>
+                </div>
+
+
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere el anticoagulante">
+                    <span class="label-input100">Anticoagulante</span>
+                    <input class="input100" type="text" name="anticoa" placeholder="Ingrese el anticoagulante">
+                    <span class="focus-input100" data-symbol="&#xf241;"></span>
+                </div>
+                <div>
+                    <span class="label-input100" data-symbol="&#xf241;">Situación de la bolsa</span>
+                    <select name="bag">
+                        <option value="mala">Mala</option>
+                        <option value="Buena">Buena</option>
+                        <option value="Excelente">Excelente</option>
+                    </select>
+                </div>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere observaciones">
+                    <span class="label-input100">Observaciones</span>
+                    <input class="input100" type="text" name="observe" placeholder="Ingrese las observaciones">
+                    <span class="focus-input100" data-symbol="&#xf120;"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere que especifique
+                 si tiene derivados">
+                    <span class="label-input100">Derivados</span>
+                    <input class="input100" type="text" name="derive" placeholder="Ingrese el derivado">
+                    <span class="focus-input100" data-symbol="&#xf243;"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere que especifique en que
+                 lugar se realizó">
+                    <span class="label-input100">Extración de la sangre</span>
+                    <input class="input100" type="text" name="extra" placeholder="Ingrese en que lugar se realizó">
+                    <span class="focus-input100" data-symbol="&#xf243;"></span>
+                </div>
+                <div>
+                    <span class="label-input100" data-symbol="&#xf211;">Grupo sanguineo</span>
+                    <select name="blond">
+                        <option value="ONEG">O-</option>
+                        <option value="OPOSI">O+</option>
+                        <option value="ANEG">A-</option>
+                        <option value="APOS">A+</option>
+                        <option value="BNEG">B-</option>
+                        <option value="BPOS">B+</option>
+                        <option value="ABNEG">AB-</option>
+                        <option value="ABPOS">AB+</option>
+                    </select>
+                </div>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere el lugar donde se se encuentra la bolsa ">
+                    <span class="label-input100">Lugar donde se encuentra</span>
+                    <input class="input100" type="text" name="Address" placeholder="Ingrese el lugar donde se encuentra la bolsa">
+                    <span class="focus-input100" data-symbol="&#xf248;"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere el volumen inicial de la bolsa ">
+                    <span class="label-input100">Volumen inicial</span>
+                    <input class="input100" type="text" name="initial volume" placeholder="Ingrese el volumen inicial">
+                    <span class="focus-input100" data-symbol="&#xf248;"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Se requiere el volumen final de la bolsa ">
+                    <span class="label-input100">Volumen final</span>
+                    <input class="input100" type="text" name="initial volume" placeholder="Ingrese el volumen final de la bolsa">
+                    <span class="focus-input100" data-symbol="&#xf248;"></span>
+                </div>
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn">
+                            Registrar
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn">
+                            Eliminar
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn">
+                            Actualizar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+</body>
+</html>
