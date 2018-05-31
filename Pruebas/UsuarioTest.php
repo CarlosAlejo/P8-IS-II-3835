@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
+use Create\Clients;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -15,6 +16,6 @@ class UsuarioTest extends TestCase
      */
     public function testExample()
     {
-        $this->assertTrue(true);
+        $this->seeInDatabase('clientes', ['id_cliente' => '']);
     }
 }
